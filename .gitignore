@@ -28,10 +28,11 @@ analyze_stats.ps1
 import_db.bat
 deep_cleanup.ps1
 
-# Large Asset Folders (Optional - uncomment to skip large assets in GitHub)
-# resources/[cars]/
-# resources/[EUP]/
-# resources/[Map]/
+# Large Asset Folders (Escaped brackets for FiveM Compatibility)
+resources/\[cars\]/
+resources/\[Cars2\]/
+resources/\[Map\]/
+resources/\[EUP\]/
 
 # Node modules
 node_modules/

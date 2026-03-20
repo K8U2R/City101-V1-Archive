@@ -1,0 +1,32 @@
+Locales['en'] = {
+
+	['robbery_cancelled'] = 'ﺔﻗﺮﺴﻟﺍ ﺀﺎﻐﻟﺇ ﻢﺗ',
+	['shop_robbery'] = '<FONT FACE="A9eelsh">ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﺔﻗﺮﺳ',
+	['press_to_rob'] = '<FONT FACE="A9eelsh">ﺔﻗﺮﺴﻟﺍ ﺀﺪﺒﻟ ﻖﻠﻃﺍ',
+	['seconds_remaining'] = '~w~ seconds remaining',
+	['robbery_cancelled_at'] = ' تنبيه : لقد ألغيت سرقة ',
+	['robbery_has_cancelled'] = ' لقد ألغيت سرقة ',
+	['already_robbed'] = 'the jewelry has already been robbed. Wait: ',
+	['seconds'] = 'seconds.',
+	['rob_in_prog'] = 'تنبيه : جاري السطو على',
+	['started_to_rob'] = 'لقد بدأت بسرقة ',
+	['do_not_move'] = ', قم بأخذ المجوهرات بسرعة',
+	['alarm_triggered'] = 'تم تفعيل صافرة الإنذار وإبلاغ الشرطة',
+	['hold_pos'] = 'عند جمع جميع المجوهرات حاول أنت تهرب',
+	['robbery_complete'] = '~r~ The robbery has been successful!~s~ ~h~ Run away! ',
+	['robbery_complete_at'] = '~r~ The robbery has been successful at: ~b~',
+	['robbery_already'] = 'يتم السطو على محل المجوهرات في الوقت الحالي',
+	['robbery_has_ended'] = 'تم السطو على ',
+	['end'] = 'نجح المجرمون في السطو على محل المجوهرات',
+	['notenoughgold'] = 'لاتمتلك عدد كافي من المجوهرات',
+	['goldsell'] = 'ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﻊﻴﺑ ﻱﺭﺎﺟ',
+	['field'] = '<FONT FACE="A9eelsh">ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﺔﻗﺮﺴﻟ ~y~E~w~ ﻂﻐﺿﺍ',
+	['collectinprogress'] = 'ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﺔﻗﺮﺳ ﻱﺭﺎﺟ',
+	['lester'] = 'لقد قمت بسرقة محل المجوهرات - توجه الى ليستر لبيعها',
+	['jewelsblipmap'] = '<FONT FACE="A9eelsh">ﺕﺍﺮﻫﻮﺠﻣ',
+	['press_to_collect'] = 'ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﻊﻤﺟ',
+	['smash_case'] = 'ﺔﻗﻭﺮﺴﻤﻟﺍ ﺬﻓﺍﻮﻨﻟﺍ',
+	['press_to_sell'] = '<FONT FACE="A9eelsh">ﺕﺍﺮﻫﻮﺠﻤﻟﺍ ﻊﻴﺒﻟ ~y~E~w~ ﻂﻐﺿﺍ',
+	['need_bag'] = 'أنت بحاجة الى حقيبة ظهر - يرجى التوجه الى أقرب محل'
+
+}

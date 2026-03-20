@@ -1,0 +1,6 @@
+RegisterNetEvent('esx_misc4:usecigarette')
+AddEventHandler('esx_misc4:usecigarette', function()
+	Citizen.CreateThread(function()
+        TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SMOKING", 0, true)         
+	end)
+end)

@@ -1,0 +1,30 @@
+Locales ['en'] = {
+
+	['valid_purchase'] = 'تأكيد عملية الشراء؟',
+	['yes'] = '<font color=00EE4F>نعم</font>',
+	['no'] = '<font color=FF0E0E>رجوع</font>',
+	['helmet'] = 'قبعة / حماية الرأس',
+	['glasses'] = 'نظارات',
+	['mask'] = 'قناع',
+	['ears'] = 'اكسسوارات الأذن',
+	['shop'] = 'shop of',
+	['set_unset'] = 'التحكم بالاكسسوارات',
+	['not_enough_money'] = 'ليس لديك مبلغ كافي من النقود',
+	['press_access'] = "<FONT FACE='A9eelsh'>ﺔﻤﺋﺎﻘﻟﺍ ﺢﺘﻔﻟ [E] ﻂﻐﺿﺍ</font>",
+	['accessories_blip'] = 'accessories',
+	['no_ears'] = 'ليس لديك اكسسوارات للأذن',
+	['no_glasses'] = 'ليس لديك نظارة',
+	['no_helmet'] = 'ليس لديك غطاء للرأس',
+	['no_mask'] = 'ليس لديك قناع',
+	['you_paid'] = 'تم الدفع',
+	
+	['idcards_MenuName'] = 'البطاقات الشخصية 📋',
+	['personal_menu'] = 'القائمة الشخصية',
+	['xp_check'] = 'التحقق من مستوى الخبرة 🔍',
+	['tebex_records'] = 'سجل متجر مدينة 101 📦',
+	['Graphics_MenuName'] = 'جرافيكس و تحسين <font color=yellow>FPS</font> 🌌',
+	['rockstarEditor_MenuName'] = 'تصوير مونتاج روكستار  🎥',
+	['accessories'] = 'اكسسوارات 🎭',
+	['reward'] = '<font color=orange>المكافأة اليومية</font>',
+
+}

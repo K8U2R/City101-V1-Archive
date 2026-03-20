@@ -1,0 +1,784 @@
+-- CLIENTSIDED --
+
+AddEventHandler("playerSpawned", function()
+    NetworkSetFriendlyFireOption(true)
+    SetCanAttackFriendly(PlayerPedId(), true, true)
+end)
+
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(0)
+        DisableControlAction(1, 140, true)
+        if IsPlayerFreeAiming(PlayerId()) then
+            DisableControlAction(1, 141, true)
+            DisableControlAction(1, 142, true)
+        end
+    end
+end)
+
+Citizen.CreateThread(function()
+  while true do
+    Citizen.Wait(1)
+    -- List of pickup hashes (https://pastebin.com/8EuSv2r1)
+    RemoveAllPickupsOfType(0xDF711959) -- carbine rifle
+    RemoveAllPickupsOfType(0xF9AFB48F) -- pistol
+    RemoveAllPickupsOfType(0xA9355DCD) -- pumpshotgun
+  end
+end)
+
+Citizen.CreateThread(function()
+    while true do
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_UNARMED"), 0.0)
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_PISTOL"), 0.4) 
+	N_0x4757f00bc6323cfe(GetHashKey("weapon_pistol50"), 0.35) 
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_GUSENBERG"), 0.4) 
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_PUMPSHOTGUN"), 0.8) 	
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_SPECIALCARBINE"), 0.4)
+	N_0x4757f00bc6323cfe(GetHashKey("weapon_assaultrifle"), 0.4)
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_COMPACTRIFLE"), 0.42)	
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MUSKET"), 0.55)	
+	N_0x4757f00bc6323cfe(GetHashKey("WEAPON_APPISTOL"), 0.39)  	
+	Wait(0)
+		-----------------------------------
+		------------ ANTI HACK ------------
+		-----------------------------------
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_SNIPERRIFLE"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_HEAVYSNIPER"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_REMOTESNIPER"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_GRENADELAUNCHER"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_GRENADELAUNCHER_SMOKE"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_RPG"), 0.0) 
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_PASSENGER_ROCKET"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_AIRSTRIKE_ROCKET"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_STINGER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MINIGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_GRENADE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_STICKYBOMB"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_SMOKEGRENADE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BZGAS"), 0.1)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MOLOTOV"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_FIREEXTINGUISHER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("OBJECT"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BALL"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_FLARE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_ANIMAL"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("VEHICLE_WEAPON_TANK"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("VEHICLE_WEAPON_SPACE_ROCKET"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("VEHICLE_WEAPON_PLAYER_LASER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("AMMO_RPG"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("AMMO_TANK"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("AMMO_SPACE_ROCKET"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("AMMO_PLAYER_LASER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("AMMO_ENEMY_LASER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_RAMMED_BY_CAR"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_FLAREGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_FIREWORK"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MARKSMANRIFLE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_HEAVYSHOTGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_PROXMINE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_HOMINGLAUNCHER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MACHINEPISTOL"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_DBSHOTGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MUSKET"), 0.3)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MARKSMANPISTOL"), 0.1)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_REVOLVER"), 0.4)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_HIT_BY_WATER_CANNON"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_EXHAUSTION"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_ELECTRIC_FENCE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BARBED_WIRE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_VEHICLE_ROCKET"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_BULLPUPRIFLE"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_ASSAULTSNIPER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("VEHICLE_WEAPON_ROTORS"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_RAILGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_AIR_DEFENCE_GUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_AUTOSHOTGUN"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_COMPACTLAUNCHER"), 0.0)
+		Wait(0)
+		N_0x4757f00bc6323cfe(GetHashKey("WEAPON_MINISMG"), 0.0)
+		Wait(0)	
+    end
+end)
+
+-- Script by Lyrad for LEFR
+
+local scopedWeapons = 
+{
+    100416529,  -- WEAPON_SNIPERRIFLE
+    205991906,  -- WEAPON_HEAVYSNIPER
+    3342088282, -- WEAPON_MARKSMANRIFLE
+	177293209,   -- WEAPON_HEAVYSNIPER MKII
+	1785463520  -- WEAPON_MARKSMANRIFLE_MK2
+}
+
+function HashInTable( hash )
+    for k, v in pairs( scopedWeapons ) do 
+        if ( hash == v ) then 
+            return true 
+        end 
+    end 
+
+    return false 
+end 
+
+function ManageReticle()
+    local ped = GetPlayerPed( -1 )
+    local _, hash = GetCurrentPedWeapon( ped, true )
+        if not HashInTable( hash ) then 
+            HideHudComponentThisFrame( 14 )
+		end 
+end 
+
+
+--[[Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(0)
+		local ped = GetPlayerPed( -1 )
+		local weapon = GetSelectedPedWeapon(ped)
+		--print(weapon) -- To get the weapon hash by pressing F8 in game
+		
+		-- Disable reticle
+		
+		ManageReticle()
+		
+		-- Disable melee while aiming (may be not working)
+		
+		if IsPedArmed(ped, 6) then
+        	DisableControlAction(1, 140, true)
+            DisableControlAction(1, 141, true)
+            DisableControlAction(1, 142, true)
+        end
+		
+		-- Disable ammo HUD
+		
+		DisplayAmmoThisFrame(false)
+		
+		-- Shakycam
+		
+		-- Pistol
+		if weapon == GetHashKey("WEAPON_STUNGUN") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.01)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_FLAREGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.01)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SNSPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.02)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SNSPISTOL_MK2") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.025)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_PISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.025)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_PISTOL_MK2") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.03)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_APPISTOL") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMBATPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.03)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_PISTOL50") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_HEAVYPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.03)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_VINTAGEPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.025)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MARKSMANPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.03)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_REVOLVER") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.045)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_REVOLVER_MK2") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.055)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_DOUBLEACTION") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.025)
+			end
+		end
+		-- SMG
+		
+		if weapon == GetHashKey("WEAPON_MICROSMG") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.035)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMBATPDW") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.045)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SMG") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.045)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SMG_MK2") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.055)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_ASSAULTSMG") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.050)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MACHINEPISTOL") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.035)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MINISMG") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.035)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MG") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.07)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMBATMG") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.08)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMBATMG_MK2") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.085)
+			end
+		end
+		
+		-- Rifles
+		
+		if weapon == GetHashKey("WEAPON_ASSAULTRIFLE") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.07)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_ASSAULTRIFLE_MK2") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.075)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_CARBINERIFLE") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.06)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_CARBINERIFLE_MK2") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.065)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_ADVANCEDRIFLE") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.06)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_GUSENBERG") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SPECIALCARBINE") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.06)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SPECIALCARBINE_MK2") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.075)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_BULLPUPRIFLE") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_BULLPUPRIFLE_MK2") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.065)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMPACTRIFLE") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		-- Shotgun
+		
+		if weapon == GetHashKey("WEAPON_PUMPSHOTGUN") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.07)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_PUMPSHOTGUN_MK2") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.085)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_SAWNOFFSHOTGUN") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.06)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_ASSAULTSHOTGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.12)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_BULLPUPSHOTGUN") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.08)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_DBSHOTGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.05)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_AUTOSHOTGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.08)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MUSKET") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.04)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_HEAVYSHOTGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.13)
+			end
+		end
+		
+		-- Sniper
+		
+		if weapon == GetHashKey("WEAPON_SNIPERRIFLE") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.2)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_HEAVYSNIPER") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.3)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_HEAVYSNIPER_MK2") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.35)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MARKSMANRIFLE") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.1)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MARKSMANRIFLE_MK2") then			
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.1)
+			end
+		end
+		
+		-- Launcher
+		
+		if weapon == GetHashKey("WEAPON_GRENADELAUNCHER") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.08)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_RPG") then
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.9)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_HOMINGLAUNCHER") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.9)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_MINIGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.20)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_RAILGUN") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 1.0)
+				
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_COMPACTLAUNCHER") then		
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.08)
+			end
+		end
+		
+		if weapon == GetHashKey("WEAPON_FIREWORK") then	
+			if IsPedShooting(ped) then
+				ShakeGameplayCam('SMALL_EXPLOSION_SHAKE', 0.5)
+			end
+		end
+		
+		-- Infinite FireExtinguisher
+		
+		if weapon == GetHashKey("WEAPON_FIREEXTINGUISHER") then		
+			if IsPedShooting(ped) then
+				SetPedInfiniteAmmo(ped, true, GetHashKey("WEAPON_FIREEXTINGUISHER"))
+			end
+		end
+	end
+end)]]
+
+
+local shot = false
+local check = false
+local check2 = false
+local count = 0
+
+Citizen.CreateThread(function()
+	while true do
+		--SetBlackout(false)
+		Citizen.Wait( 1 )
+		if IsPlayerFreeAiming(PlayerId()) then
+		    if GetFollowPedCamViewMode() == 4 and check == false then
+			    check = false
+			else
+			    SetFollowPedCamViewMode(4)
+			    check = true
+			end
+		else
+		    if check == true then
+		        SetFollowPedCamViewMode(1)
+				check = false
+			end
+		end
+	end
+end )
+
+-- recoil script by bluethefurry / Blumlaut https://forum.fivem.net/t/betterrecoil-better-3rd-person-recoil-for-fivem/82894
+-- I just added some missing weapons because of the doomsday update adding some MK2.
+-- I can't manage to make negative hashes works, if someone make it works, please let me know =)
+
+local recoils = {
+	[453432689] = 0.3, -- PISTOL
+	[3219281620] = 0.3, -- PISTOL MK2
+	[1593441988] = 0.2, -- COMBAT PISTOL
+	[584646201] = 0.1, -- AP PISTOL
+	[2578377531] = 0.6, -- PISTOL .50
+	[324215364] = 0.2, -- MICRO SMG
+	[736523883] = 0.1, -- SMG
+	[2024373456] = 0.1, -- SMG MK2
+	[4024951519] = 0.1, -- ASSAULT SMG
+	[3220176749] = 0.2, -- ASSAULT RIFLE
+	[961495388] = 0.2, -- ASSAULT RIFLE MK2
+	[2210333304] = 0.1, -- CARBINE RIFLE
+	[4208062921] = 0.1, -- CARBINE RIFLE MK2
+	[2937143193] = 0.1, -- ADVANCED RIFLE
+	[2634544996] = 0.1, -- MG
+	[2144741730] = 0.1, -- COMBAT MG
+	[3686625920] = 0.1, -- COMBAT MG MK2
+	[487013001] = 0.4, -- PUMP SHOTGUN
+	[1432025498] = 0.4, -- PUMP SHOTGUN MK2
+	[2017895192] = 0.7, -- SAWNOFF SHOTGUN
+	[3800352039] = 0.4, -- ASSAULT SHOTGUN
+	[2640438543] = 0.2, -- BULLPUP SHOTGUN
+	[911657153] = 0.1, -- STUN GUN
+	[100416529] = 0.5, -- SNIPER RIFLE
+	[205991906] = 0.7, -- HEAVY SNIPER
+	[177293209] = 0.7, -- HEAVY SNIPER MK2
+	[856002082] = 1.2, -- REMOTE SNIPER
+	[2726580491] = 1.0, -- GRENADE LAUNCHER
+	[1305664598] = 1.0, -- GRENADE LAUNCHER SMOKE
+	[2982836145] = 0.0, -- RPG
+	[1752584910] = 0.0, -- STINGER
+	[1119849093] = 0.01, -- MINIGUN
+	[3218215474] = 0.2, -- SNS PISTOL
+	[2009644972] = 0.25, -- SNS PISTOL MK2
+	[1627465347] = 0.1, -- GUSENBERG
+	[3231910285] = 0.2, -- SPECIAL CARBINE
+	[-1768145561] = 0.25, -- SPECIAL CARBINE MK2
+	[3523564046] = 0.5, -- HEAVY PISTOL
+	[2132975508] = 0.2, -- BULLPUP RIFLE
+	[-2066285827] = 0.25, -- BULLPUP RIFLE MK2
+	[137902532] = 0.4, -- VINTAGE PISTOL
+	[-1746263880] = 0.4, -- DOUBLE ACTION REVOLVER
+	[2828843422] = 0.7, -- MUSKET
+	[984333226] = 0.2, -- HEAVY SHOTGUN
+	[3342088282] = 0.3, -- MARKSMAN RIFLE
+	[1785463520] = 0.35, -- MARKSMAN RIFLE MK2
+	[1672152130] = 0, -- HOMING LAUNCHER
+	[1198879012] = 0.9, -- FLARE GUN
+	[171789620] = 0.2, -- COMBAT PDW
+	[3696079510] = 0.9, -- MARKSMAN PISTOL
+  	[1834241177] = 2.4, -- RAILGUN
+	[3675956304] = 0.3, -- MACHINE PISTOL
+	[3249783761] = 0.6, -- REVOLVER
+	[-879347409] = 0.65, -- REVOLVER MK2
+	[4019527611] = 0.7, -- DOUBLE BARREL SHOTGUN
+	[1649403952] = 0.3, -- COMPACT RIFLE
+	[317205821] = 0.2, -- AUTO SHOTGUN
+	[125959754] = 0.5, -- COMPACT LAUNCHER
+	[3173288789] = 0.1, -- MINI SMG		
+}
+
+
+
+--[[Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(0)
+		if IsPedShooting(PlayerPedId()) and not IsPedDoingDriveby(PlayerPedId()) then
+			local _,wep = GetCurrentPedWeapon(PlayerPedId())
+			_,cAmmo = GetAmmoInClip(PlayerPedId(), wep)
+			if recoils[wep] and recoils[wep] ~= 0 then
+				tv = 0
+				repeat 
+					Wait(0)
+					p = GetGameplayCamRelativePitch()
+					if GetFollowPedCamViewMode() ~= 4 then
+						SetGameplayCamRelativePitch(p+0.1, 0.2)
+					end
+					tv = tv+0.1
+				until tv >= recoils[wep]
+			end
+			
+		end
+	end
+end)]]
+
+
+local crouched = false
+local proned = false
+crouchKey = 36
+proneKey = 911
+
+Citizen.CreateThread( function()
+	while true do 
+		Citizen.Wait( 1 )
+		local ped = GetPlayerPed( -1 )
+		if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then 
+			ProneMovement()
+			DisableControlAction( 0, proneKey, true ) 
+			DisableControlAction( 0, crouchKey, true ) 
+			if ( not IsPauseMenuActive() ) then 
+				if ( IsDisabledControlJustPressed( 0, crouchKey ) and not proned ) then 
+					RequestAnimSet( "move_ped_crouched" )
+					RequestAnimSet("MOVE_M@TOUGH_GUY@")
+					
+					while ( not HasAnimSetLoaded( "move_ped_crouched" ) ) do 
+						Citizen.Wait( 100 )
+					end 
+					while ( not HasAnimSetLoaded( "MOVE_M@TOUGH_GUY@" ) ) do 
+						Citizen.Wait( 100 )
+					end 		
+					if ( crouched and not proned ) then 
+						ResetPedMovementClipset( ped )
+						ResetPedStrafeClipset(ped)
+						SetPedMovementClipset( ped,"MOVE_M@TOUGH_GUY@", 0.5)
+						crouched = false 
+					elseif ( not crouched and not proned ) then
+						SetPedMovementClipset( ped, "move_ped_crouched", 0.55 )
+						SetPedStrafeClipset(ped, "move_ped_crouched_strafing")
+						crouched = true 
+					end 
+				elseif ( IsDisabledControlJustPressed(0, proneKey) and not crouched and not IsPedInAnyVehicle(ped, true) and not IsPedFalling(ped) and not IsPedDiving(ped) and not IsPedInCover(ped, false) and not IsPedInParachuteFreeFall(ped) and (GetPedParachuteState(ped) == 0 or GetPedParachuteState(ped) == -1) ) then
+					if proned then
+						ClearPedTasksImmediately(ped)
+						proned = false
+					elseif not proned then
+						RequestAnimSet( "move_crawl" )
+						while ( not HasAnimSetLoaded( "move_crawl" ) ) do 
+							Citizen.Wait( 100 )
+						end 
+						ClearPedTasksImmediately(ped)
+						proned = true
+						if IsPedSprinting(ped) or IsPedRunning(ped) or GetEntitySpeed(ped) > 5 then
+							TaskPlayAnim(ped, "move_jump", "dive_start_run", 8.0, 1.0, -1, 0, 0.0, 0, 0, 0)
+							Citizen.Wait(1000)
+						end
+						SetProned()
+					end
+				end
+			end
+		else
+			proned = false
+			crouched = false
+		end
+	end
+end)
+
+function SetProned()
+	ped = PlayerPedId()
+	ClearPedTasksImmediately(ped)
+	TaskPlayAnimAdvanced(ped, "move_crawl", "onfront_fwd", GetEntityCoords(ped), 0.0, 0.0, GetEntityHeading(ped), 1.0, 1.0, 1.0, 46, 1.0, 0, 0)
+end
+
+
+function ProneMovement()
+	if proned then
+		ped = PlayerPedId()
+		if IsControlPressed(0, 32) or IsControlPressed(0, 33) then
+			DisablePlayerFiring(ped, true)
+		 elseif IsControlJustReleased(0, 32) or IsControlJustReleased(0, 33) then
+		 	DisablePlayerFiring(ped, false)
+		 end
+		if IsControlJustPressed(0, 32) and not movefwd then
+			movefwd = true
+		    TaskPlayAnimAdvanced(ped, "move_crawl", "onfront_fwd", GetEntityCoords(ped), 1.0, 0.0, GetEntityHeading(ped), 1.0, 1.0, 1.0, 47, 1.0, 0, 0)
+		elseif IsControlJustReleased(0, 32) and movefwd then
+		    TaskPlayAnimAdvanced(ped, "move_crawl", "onfront_fwd", GetEntityCoords(ped), 1.0, 0.0, GetEntityHeading(ped), 1.0, 1.0, 1.0, 46, 1.0, 0, 0)
+			movefwd = false
+		end		
+		if IsControlJustPressed(0, 33) and not movebwd then
+			movebwd = true
+		    TaskPlayAnimAdvanced(ped, "move_crawl", "onfront_bwd", GetEntityCoords(ped), 1.0, 0.0, GetEntityHeading(ped), 1.0, 1.0, 1.0, 47, 1.0, 0, 0)
+		elseif IsControlJustReleased(0, 33) and movebwd then 
+		    TaskPlayAnimAdvanced(ped, "move_crawl", "onfront_bwd", GetEntityCoords(ped), 1.0, 0.0, GetEntityHeading(ped), 1.0, 1.0, 1.0, 46, 1.0, 0, 0)
+		    movebwd = false
+		end
+		if IsControlPressed(0, 34) then
+			SetEntityHeading(ped, GetEntityHeading(ped)+2.0 )
+		elseif IsControlPressed(0, 35) then
+			SetEntityHeading(ped, GetEntityHeading(ped)-2.0 )
+		end
+	end
+end
