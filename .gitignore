@@ -1,0 +1,37 @@
+# FiveM Server GitIgnore
+# ----------------------
+
+# Ephemeral data
+cache/
+logs/
+crashes/
+db/
+*.log
+*.key
+server-monitor-token.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Binaries/Artifacts
+FXServer.exe
+*.dll
+*.pdb
+*.so
+*.map
+citizen/
+
+# Temporary files
+server_log.txt
+analyze_stats.ps1
+import_db.bat
+deep_cleanup.ps1
+
+# Large Asset Folders (Optional - uncomment to skip large assets in GitHub)
+# resources/[cars]/
+# resources/[EUP]/
+# resources/[Map]/
+
+# Node modules
+node_modules/
